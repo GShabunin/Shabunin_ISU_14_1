@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<id>3</id>
+	<type>Hat</type>
+	<Name>Шляпа Глеба!</Name>
+	<Defense>100500</Defense>
+	<Special>Позволяет встречаться с Катей</Special>
+</root>

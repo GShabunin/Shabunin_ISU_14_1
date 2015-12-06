@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<id>4</id>
+	<type>Hat</type>
+	<Name>Шляпень из мордора!</Name>
+	<Defense>3</Defense>
+	<Special>Позволяет бить по пяткам хоббитов</Special>
+</root>

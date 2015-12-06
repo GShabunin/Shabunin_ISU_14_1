@@ -1,0 +1,21 @@
+﻿<metrocontrols:MetroWindow x:Class="HeroEditor.View.Windows.HeroEditorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HeroEditor.View.Windows"
+        mc:Ignorable="d"
+        xmlns:metrocontrols="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:view="clr-namespace:HeroEditor.View.Controls"
+        Title="HeroEditorWindow" Width="600" Height="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <view:ChoiceItemsControl Grid.Column="0" />
+        <view:HeroView Grid.Column="1" />
+
+    </Grid>
+</metrocontrols:MetroWindow>

@@ -1,0 +1,102 @@
+﻿<UserControl x:Class="HeroEditor.View.Controls.HeroView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HeroEditor.View.Controls"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:cmd="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Platform"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300"
+             DataContext="{Binding Source={StaticResource Locator}, Path=Hero}">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../../../Templates/ControlsStyles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <StackPanel Orientation="Horizontal">
+        <DockPanel LastChildFill="False">
+            <Label Content="А вот и наш герой!" DockPanel.Dock="Top" />
+            <TextBox DockPanel.Dock="Top" Text="{Binding Path=Name}"/>
+            
+            <!--Шляпа ептыть!-->
+            
+            <DockPanel Margin="5,10,0,5"  Width="Auto" DockPanel.Dock="Top" LastChildFill="False">
+                <Label DockPanel.Dock="Left" Content="Слот для шляпы!"  Width="Auto"/>
+                <Label Style="{StaticResource ResourceKey=SlotItemStyle}" DockPanel.Dock="Left">
+                    <Image Source="{Binding Path=HatImage}" 
+                           Width="{Binding Path=ActualWidth , RelativeSource={RelativeSource FindAncestor ,AncestorType={x:Type Label}}}" 
+                           />
+
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseDown">
+                            <cmd:EventToCommand Command="{Binding HatMouseDown}" PassEventArgsToCommand="True" />
+                        </i:EventTrigger>
+                        <i:EventTrigger EventName="Drop">
+                            <cmd:EventToCommand Command="{Binding HatDrop}" PassEventArgsToCommand="True" />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Label>
+            </DockPanel>
+
+            <!--Бронька Chest-->
+            
+            <DockPanel Margin="5,10,0,5"  Width="Auto" DockPanel.Dock="Top" LastChildFill="False">
+                <Label DockPanel.Dock="Left" Content="Слот для брони!" Width="Auto"/>
+                <Label Style="{StaticResource ResourceKey=SlotItemStyle}"  DockPanel.Dock="Left">
+                    <Image Source="{Binding Path=ChestImage}" 
+                           Width="{Binding Path=ActualWidth , RelativeSource={RelativeSource FindAncestor ,AncestorType={x:Type Label}}}" 
+                           />
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseDown">
+                            <cmd:EventToCommand Command="{Binding ChestMouseDown}" PassEventArgsToCommand="True"/>
+                        </i:EventTrigger>
+                        <i:EventTrigger EventName="Drop">
+                            <cmd:EventToCommand Command="{Binding ChestDrop}" PassEventArgsToCommand="True" />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Label>
+            </DockPanel>
+
+            <!--Оружие Weapon-->
+            
+            <DockPanel Margin="5,10,0,5"  Width="Auto" DockPanel.Dock="Top" LastChildFill="False" >
+                <Label DockPanel.Dock="Left" Content="Слот для оружия!" Width="Auto"/>
+                <Label Style="{StaticResource ResourceKey=SlotItemStyle}" DockPanel.Dock="Left">
+                    <Image Source="{Binding Path=WeaponImage}" 
+                           Width="{Binding Path=ActualWidth , RelativeSource={RelativeSource FindAncestor ,AncestorType={x:Type Label}}}" />
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseDown">
+                            <cmd:EventToCommand Command="{Binding WeaponMouseDown}" PassEventArgsToCommand="True"/>
+                        </i:EventTrigger>
+                        <i:EventTrigger EventName="Drop">
+                            <cmd:EventToCommand Command="{Binding WeaponDrop}" PassEventArgsToCommand="True" />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Label>
+            </DockPanel>
+
+            <Button DockPanel.Dock="Top" Content="Сохранить" Command="{Binding Path=ButtonSave}" />
+
+
+            <!--Этот кусок говна сохранен для примера-->
+            <!--<TextBlock  AllowDrop="True" Drop="TextBlock_Drop" Text="ASDASDASDASD" Background="Red"/>-->
+
+        </DockPanel>
+
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+                <Label Content="Атака : " Width ="60" />
+                <Label Content="{Binding Path=Attack}"/>
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+                <Label Content="Защита : " Width="60" />
+                <Label Content="{Binding Path=Defense}"/>
+            </StackPanel>
+        </DockPanel>
+    </StackPanel>
+</UserControl>

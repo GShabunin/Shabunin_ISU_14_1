@@ -1,0 +1,36 @@
+﻿<metrocontrols:MetroWindow x:Class="HeroEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HeroEditor"
+        xmlns:metrocontrols="http://metro.mahapps.com/winfx/xaml/controls"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525"
+        x:Name="MyMetroMainWindow"
+        DataContext="{Binding Source={StaticResource Locator}, Path=Main}">
+    <metrocontrols:MetroWindow.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Templates/ButtonTemplates.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </metrocontrols:MetroWindow.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+    
+        <Button Grid.Row="0" Content="Загрузить" Style="{StaticResource BigCenterButtons}" 
+                Command="{Binding OpenChoosingHeroWindow}"
+                CommandParameter="{Binding ElementName=MyMetroMainWindow}"/>
+            
+            
+        <Button Grid.Row="1" Content="Создать нового" Style="{StaticResource BigCenterButtons}" 
+            Command="{Binding OpenWindowCreateNewHero}"
+            CommandParameter="{Binding ElementName=MyMetroMainWindow}"/>
+    
+    </Grid>
+</metrocontrols:MetroWindow>

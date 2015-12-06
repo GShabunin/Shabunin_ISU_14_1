@@ -1,0 +1,20 @@
+﻿HeroEditor
+
+
+winexe
+C#
+.cs
+C:\Users\Geralt\Documents\Visual Studio 2015\Projects\HeroEditor\HeroEditor\obj\Debug\
+HeroEditor
+none
+false
+DEBUG;TRACE
+C:\Users\Geralt\Documents\Visual Studio 2015\Projects\HeroEditor\HeroEditor\App.xaml
+91826163505
+
+38-1385084534
+71-1654066881
+MainWindow.xaml;Resources\Icons.xaml;Templates\ButtonTemplates.xaml;Templates\ControlsStyles.xaml;Templates\ItemsTemplate.xaml;View\Controls\ChoiceItemsControl.xaml;View\Controls\HeroView.xaml;View\Windows\ChoosingHeroWindow.xaml;View\Windows\HeroEditorWindow.xaml;
+
+False
+

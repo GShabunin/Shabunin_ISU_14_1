@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<id>2</id>
+	<type>Weapon</type>
+	<Name>Световой меч</Name>
+	<Attack>4</Attack>
+	<Special>Можно жарить кроликов</Special>
+</root>
