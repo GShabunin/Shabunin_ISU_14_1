@@ -14,9 +14,6 @@ namespace HeroEditor.Service.DataBases.Xml
         {
             string name, defense, special, id, description, type;
 
-            // У НАС ТУТ ВИДИТЕ ЛИ ЛИ ОЧЕНЬ УМНАЯ ВИЖЛА
-            // ТАК ЧТО ЭТА ХЕРНЯ НУЖНА ДЛЯ ТОГО
-            // ЧТОБЫ ЭТА ТВАРЬ ЗАКРЫЛА СВОЙ РОТ!
 
             defense = "";
             name = defense;

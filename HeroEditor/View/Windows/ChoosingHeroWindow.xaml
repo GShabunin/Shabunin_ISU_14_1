@@ -7,7 +7,7 @@
         xmlns:metrocontrols="http://metro.mahapps.com/winfx/xaml/controls"
         mc:Ignorable="d"
         x:Name="MyWindow"
-        Title="Слышь ты, кусок мамонта, персонажа выбрал на!" Height="300" Width="300"
+        Title="Выбор персонажа" Height="300" Width="300"
         DataContext="{Binding Source={StaticResource Locator}, Path=ChoosingHero}">
     <Grid x:Name="BigGrid">
         <Grid.ColumnDefinitions>
@@ -26,10 +26,10 @@
         </ListView>
 
         <StackPanel Grid.Column="1">
-            <Button Content="Удалить к хуям"
+            <Button Content="Удалить"
                     Command="{Binding Path=ButDelete}"
                     CommandParameter="{Binding ElementName=MyWindow}"/>
-            <Button Content="Немного поредактировать" 
+            <Button Content="Редактировать" 
                     Command="{Binding Path=ButEdit}"
                     CommandParameter="{Binding ElementName=MyWindow}"/>
         </StackPanel>

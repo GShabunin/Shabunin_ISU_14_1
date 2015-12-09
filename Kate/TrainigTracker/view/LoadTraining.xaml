@@ -1,0 +1,33 @@
+﻿<Controls:MetroWindow x:Class="TrainigTracker.view.LoadTraining"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"        
+        Title="LoadTraining" Height="300" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <ListView x:Name="TrainingList" Grid.Column="0" ItemsSource="{Binding Path=Training}" SelectionMode="Single" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Label Content="{Binding Path=Name}" />
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+        <StackPanel Grid.Column="1">
+            <Button Content="Удалить"
+                    Command="{Binding Path=ButDelete}"
+                    CommandParameter="{Binding ElementName=MyWindow}"/>
+            <Button Content="Редактировать" 
+                    Command="{Binding Path=ButEdit}"
+                    CommandParameter="{Binding ElementName=MyWindow}"/>
+        </StackPanel>
+
+    </Grid> 
+</Controls:MetroWindow>

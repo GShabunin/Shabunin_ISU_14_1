@@ -42,3 +42,47 @@ C:\Users\Geralt\Documents\Visual Studio 2015\Projects\HeroEditor\HeroEditor\obj\
 C:\Users\Geralt\Documents\Visual Studio 2015\Projects\HeroEditor\HeroEditor\obj\Debug\Templates\ControlsStyles.baml
 C:\Users\Geralt\Documents\Visual Studio 2015\Projects\HeroEditor\HeroEditor\obj\Debug\View\Windows\ChoosingHeroWindow.g.cs
 C:\Users\Geralt\Documents\Visual Studio 2015\Projects\HeroEditor\HeroEditor\obj\Debug\View\Windows\ChoosingHeroWindow.baml
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\bin\Debug\HeroEditor.exe.config
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\HeroEditor.exe
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\HeroEditor.pdb
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\bin\Debug\HeroEditor.exe
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\bin\Debug\HeroEditor.pdb
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\bin\Debug\GalaSoft.MvvmLight.dll
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\bin\Debug\MahApps.Metro.dll
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\bin\Debug\System.Windows.Interactivity.dll
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\bin\Debug\GalaSoft.MvvmLight.pdb
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\bin\Debug\GalaSoft.MvvmLight.xml
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\bin\Debug\MahApps.Metro.xml
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\HeroEditor.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\Resources\Icons.baml
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\Templates\ButtonTemplates.baml
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\MainWindow.g.cs
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\Resources\Icons.g.cs
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\View\Controls\ChoiceItemsControl.g.cs
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\View\Controls\HeroView.g.cs
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\View\Windows\ChoosingHeroWindow.g.cs
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\View\Windows\HeroEditorWindow.g.cs
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\App.g.cs
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\GeneratedInternalTypeHelper.g.cs
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\HeroEditor_MarkupCompile.cache
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\HeroEditor_MarkupCompile.lref
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\App.baml
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\MainWindow.baml
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\Templates\ControlsStyles.baml
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\Templates\ItemsTemplate.baml
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\View\Controls\ChoiceItemsControl.baml
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\View\Controls\HeroView.baml
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\View\Windows\ChoosingHeroWindow.baml
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\View\Windows\HeroEditorWindow.baml
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\HeroEditor.g.resources
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\HeroEditor.Properties.Resources.resources
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\HeroEditor.csproj.GenerateResource.Cache
