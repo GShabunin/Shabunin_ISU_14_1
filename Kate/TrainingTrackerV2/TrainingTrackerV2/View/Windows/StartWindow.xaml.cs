@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MahApps.Metro.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,17 +11,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
-using MahApps.Metro.Controls;
 
-namespace TrainigTracker.view
+namespace TrainingTrackerV2
 {
     /// <summary>
-    /// Логика взаимодействия для CreateNewTraining.xaml
+    /// Логика взаимодействия для StartWindow.xaml
     /// </summary>
-    public partial class CreateNewTraining : MetroWindow
+    public partial class StartWindow : MetroWindow
     {
-        public CreateNewTraining()
+        public StartWindow()
         {
             InitializeComponent();
         }

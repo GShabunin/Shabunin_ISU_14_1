@@ -1,0 +1,56 @@
+﻿<metrocontrols:MetroWindow x:Class="TrainingTrackerV2.View.Windows.AddNewTrainingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:metrocontrols="http://metro.mahapps.com/winfx/xaml/controls"
+                           
+        BorderThickness="1"
+        GlowBrush="Black"
+        ResizeMode="CanResizeWithGrip"
+                           
+        WindowTransitionsEnabled="False"
+        WindowStartupLocation="CenterScreen"
+                           
+        DataContext="{Binding Path=AddNewTraining ,Source={StaticResource Locator}}"
+                           
+        Title="Новая тренировка" Height="500" Width="600">
+
+        <metrocontrols:MetroWindow.Resources>
+            <ResourceDictionary>
+                <ResourceDictionary.MergedDictionaries>
+                    <ResourceDictionary Source="../Templates/EditingWeightExercise.xaml"/>
+                </ResourceDictionary.MergedDictionaries>
+            </ResourceDictionary>
+        </metrocontrols:MetroWindow.Resources>
+
+
+        <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Orientation="Vertical">
+            
+            <Label Content="Название тренировки" />
+            <TextBox Text="{Binding Path=Name}" />
+            
+            <Label Content="Дополнительное описание" />
+            <TextBox Text="{Binding Path=Description}" />
+
+            <ListView ItemsSource="{Binding Path=Exercises}" />
+
+
+            <Button Content="Save" />
+        </StackPanel>
+        
+        <GridSplitter Grid.Column="1" Width="5" Background="Red" HorizontalAlignment="Center" />
+        
+        <StackPanel Grid.Column="2" Orientation="Vertical">
+            <Button Content="Добавить силовое упражнение" Command="{Binding Path=ButAddWeight}"/>
+            <Button Content="Добавить кардио" />
+            <Button Content="Добавить простое упражнение" />
+            <Button Content="Удалить последнее" Command="{Binding Path=ButDelete}" />
+        </StackPanel>
+    </Grid>
+</metrocontrols:MetroWindow>

@@ -10,17 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
-using MahApps.Metro.Controls;
 
-namespace TrainigTracker.view
+namespace TrainingTrackerV2.View.Controls
 {
     /// <summary>
-    /// Логика взаимодействия для CreateNewTraining.xaml
+    /// Логика взаимодействия для TrainingEditorControl.xaml
     /// </summary>
-    public partial class CreateNewTraining : MetroWindow
+    public partial class TrainingEditorControl : UserControl
     {
-        public CreateNewTraining()
+        public TrainingEditorControl()
         {
             InitializeComponent();
         }

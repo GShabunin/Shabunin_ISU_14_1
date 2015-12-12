@@ -1,0 +1,48 @@
+﻿<metrocontrols:MetroWindow x:Class="TrainingTrackerV2.StartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:metrocontrols="http://metro.mahapps.com/winfx/xaml/controls"
+        
+        xmlns:viewcontrols="clr-namespace:TrainingTrackerV2.View.Controls"                   
+
+        BorderThickness="1"
+        GlowBrush="Black"
+        ResizeMode="CanResizeWithGrip"
+                           
+        WindowTransitionsEnabled="False"
+        WindowStartupLocation="CenterScreen"
+                           
+        Title="Стать Арни!" Height="350" Width="525"
+        DataContext="{Binding Path=Start ,Source={StaticResource Locator}}">
+    
+    <metrocontrols:MetroWindow.RightWindowCommands>
+        <metrocontrols:WindowCommands>
+            <Button Content="Добавить новую тренировку" Command="{Binding Path=ButCreateNewTraining}" />
+        </metrocontrols:WindowCommands>
+    </metrocontrols:MetroWindow.RightWindowCommands>
+    
+    <metrocontrols:MetroWindow.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Templates/ShortViewTraining.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </metrocontrols:MetroWindow.Resources>
+    
+    <Grid>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        
+        <ListView Grid.Row="0" Grid.Column="0" ItemsSource="{Binding Path=Trainings}"
+                  Background="Transparent" BorderThickness="0" SelectionMode="Single" />
+        
+        <GridSplitter Grid.Row="0" Grid.Column="1" Width="5" Background="Red" HorizontalAlignment="Center"/>
+        
+        <viewcontrols:TrainingEditorControl Grid.Row="0" Grid.Column="2" />
+        
+    </Grid>
+</metrocontrols:MetroWindow>
