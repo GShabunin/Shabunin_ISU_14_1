@@ -85,6 +85,8 @@
     <Compile Include="MagicService\FakeBridge.cs" />
     <Compile Include="MagicService\IDataBridge.cs" />
     <Compile Include="Model\SportActivities\Implementations\BaseExerciseModel.cs" />
+    <Compile Include="Model\SportActivities\Implementations\CardioExerciseModel.cs" />
+    <Compile Include="Model\SportActivities\Implementations\SimpleExerciseModel.cs" />
     <Compile Include="Model\SportActivities\Implementations\WeightExerciseModel.cs" />
     <Compile Include="Model\SportActivities\Interafaces\IExercise.cs" />
     <Compile Include="Model\SportActivities\Implementations\Repeat.cs" />
