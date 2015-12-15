@@ -6,11 +6,24 @@ using System.Text;
 using System.Threading.Tasks;
 using TrainingTrackerV2.DataBase;
 using TrainingTrackerV2.Model.SportActivities;
+using System.IO;
+using System.Reflection;
+using System.Xml;
+using System.Threading;
+using TrainingTrackerV2.DataBase.Xml;
 
 namespace TrainingTrackerV2.MagicService
 {
     class DataBridge : IDataBridge, INotifyPropertyChanged
     {
+        private GrabberXmlExerciseFromFolder _grabber;
+
+        public DataBridge(GrabberXmlExerciseFromFolder grabber)
+        {
+            if (grabber == null) throw new ArgumentException("grabber");
+            _grabber = grabber;
+        }
+        
         #region NonPublic Fields
 
         IConnectionDb _connection;

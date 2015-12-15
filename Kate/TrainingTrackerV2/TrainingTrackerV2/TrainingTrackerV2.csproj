@@ -81,6 +81,9 @@
     </ApplicationDefinition>
     <Compile Include="DataBase\IConnectionDb.cs" />
     <Compile Include="DataBase\Xml\ConnectionXml.cs" />
+    <Compile Include="DataBase\Xml\GrabberXmlExerciseFromFolder.cs" />
+    <Compile Include="DataBase\Xml\IXmlParserExercise.cs" />
+    <Compile Include="DataBase\Xml\IXmlParserTraining.cs" />
     <Compile Include="MagicService\DataBridge.cs" />
     <Compile Include="MagicService\FakeBridge.cs" />
     <Compile Include="MagicService\IDataBridge.cs" />
