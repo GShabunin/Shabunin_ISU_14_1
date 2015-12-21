@@ -1,0 +1,11 @@
+﻿<Controls:MetroWindow x:Class="_8Puzzle.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="Puzzle" Height="341.911" Width="295.97" Loaded="Window_Loaded">
+    <Grid x:Name="txt">
+        <Canvas Name="cnBoard" Width="240" Height="240" Background="Black"></Canvas>
+        <Button Content="Solve" HorizontalAlignment="Left" Margin="108,280,0,0" VerticalAlignment="Top" Width="75" Click="btnSolve_Click"/>
+        <TextBlock x:Name="txtSteps" HorizontalAlignment="Left" Margin="108,10,0,0" TextWrapping="Wrap" Text="Steps: " VerticalAlignment="Top"/>
+    </Grid>
+</Controls:MetroWindow>
