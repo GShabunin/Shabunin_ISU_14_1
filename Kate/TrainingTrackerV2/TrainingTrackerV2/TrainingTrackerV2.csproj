@@ -84,6 +84,10 @@
     <Compile Include="DataBase\Xml\GrabberXmlExerciseFromFolder.cs" />
     <Compile Include="DataBase\Xml\IXmlParserExercise.cs" />
     <Compile Include="DataBase\Xml\IXmlParserTraining.cs" />
+    <Compile Include="Factories\CardioFactory.cs" />
+    <Compile Include="Factories\IExerciseFactory.cs" />
+    <Compile Include="Factories\SimpleFactory.cs" />
+    <Compile Include="Factories\WeightFactory.cs" />
     <Compile Include="MagicService\DataBridge.cs" />
     <Compile Include="MagicService\FakeBridge.cs" />
     <Compile Include="MagicService\IDataBridge.cs" />
@@ -99,6 +103,14 @@
     <Compile Include="ViewModel\StartViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Page Include="View\Controls\TrainingEditorControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Templates\EditingCardioExercise.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Templates\EditingSimpleExercise.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

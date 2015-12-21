@@ -40,7 +40,7 @@ namespace TrainingTrackerV2.DataBase.Xml
         #endregion
 
 
-        public bool AddNewTraining(TrainingModel training)
+        public bool AddNewTraining(Model.SportActivities.ITraining training)
         {
             if (training == null) throw new ArgumentNullException("training");
             if (training.ID != null)
@@ -71,7 +71,7 @@ namespace TrainingTrackerV2.DataBase.Xml
         }
 
 
-        public bool RemoveTraining(TrainingModel training)
+        public bool RemoveTraining(Model.SportActivities.ITraining training)
         {
             string path = GetNameForSavingTraining(training);
             File.Delete(path);
@@ -83,7 +83,7 @@ namespace TrainingTrackerV2.DataBase.Xml
             throw new NotImplementedException();
         }
 
-        public bool Update(TrainingModel training)
+        public bool Update(Model.SportActivities.ITraining training)
         {
             if (training == null) throw new ArgumentNullException("training");
             if (training.ID == null) throw new ArgumentException("training.ID");
@@ -107,7 +107,7 @@ namespace TrainingTrackerV2.DataBase.Xml
             return true;
         }
 
-        private void WriteTrainingToXmlDocument(XmlDocument document, TrainingModel trainingModel)
+        private void WriteTrainingToXmlDocument(XmlDocument document, Model.SportActivities.ITraining trainingModel)
         {
             if (document == null) throw new ArgumentNullException("document");
             if (trainingModel == null) throw new ArgumentNullException("training");
@@ -222,7 +222,7 @@ namespace TrainingTrackerV2.DataBase.Xml
             return pathToAssembly;
         }
 
-        private bool CheckTrainingModelForErrors(TrainingModel train)
+        private bool CheckTrainingModelForErrors(Model.SportActivities.ITraining train)
         {
             if (string.IsNullOrWhiteSpace(train.Name))
             {
@@ -236,7 +236,7 @@ namespace TrainingTrackerV2.DataBase.Xml
 
 
 
-        private string GetNameForSavingTraining(TrainingModel training)
+        private string GetNameForSavingTraining(Model.SportActivities.ITraining training)
         {
             string pathToAssembly = Assembly.GetExecutingAssembly().Location;
 

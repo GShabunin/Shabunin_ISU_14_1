@@ -18,7 +18,9 @@
             <ResourceDictionary>
                 <ResourceDictionary.MergedDictionaries>
                     <ResourceDictionary Source="../Templates/EditingWeightExercise.xaml"/>
-                </ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Templates/EditingCardioExercise.xaml"/>
+                <!--<ResourceDictionary Source="../Templates/EditingSimpleExercise.xaml"/>-->
+            </ResourceDictionary.MergedDictionaries>
             </ResourceDictionary>
         </metrocontrols:MetroWindow.Resources>
 
@@ -48,8 +50,8 @@
         
         <StackPanel Grid.Column="2" Orientation="Vertical">
             <Button Content="Добавить силовое упражнение" Command="{Binding Path=ButAddWeight}"/>
-            <Button Content="Добавить кардио" />
-            <Button Content="Добавить простое упражнение" />
+            <Button Content="Добавить кардио" Command="{Binding Path=ButCardio}"/>
+            <Button Content="Добавить простое упражнение" Command="{Binding Path=ButSimple}"/>
             <Button Content="Удалить последнее" Command="{Binding Path=ButDelete}" />
         </StackPanel>
     </Grid>

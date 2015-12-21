@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TrainingTrackerV2.Model.SportActivities;
+using TrainingTrackerV2.Model.SportActivities.Implementations;
 
 namespace TrainingTrackerV2.DataBase
 {
@@ -20,6 +21,7 @@ namespace TrainingTrackerV2.DataBase
         /// С новым годом, Данияр Олегович!
         /// </summary>
         IList<ITraining> Trainings { get; }
+        IList<IExercise> Exercises { get; }
 
         bool AddNewTraining(ITraining training);
         bool RemoveTraining(ITraining training);

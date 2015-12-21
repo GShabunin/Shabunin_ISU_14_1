@@ -8,7 +8,7 @@ C#
 HeroEditor
 none
 false
-DEBUG;TRACE
+CODE_ANALYSIS;DEBUG;TRACE
 \\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\App.xaml
 91826163505
 

@@ -13,6 +13,7 @@ using GalaSoft.MvvmLight.Command;
 using HeroEditor.Templates;
 using HeroEditor.View.Controls;
 using HeroEditor.ViewModel;
+using MahApps.Metro.Controls;
 using System;
 using System.Diagnostics;
 using System.Windows;

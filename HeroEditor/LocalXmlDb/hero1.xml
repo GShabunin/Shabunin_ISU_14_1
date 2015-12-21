@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <hero>
-    <name>блабла</name>
-    <id>3</id>
+    <name>7878</name>
+    <id>1</id>
+    <hat>3</hat>
     <chest>1</chest>
     <weapon>2</weapon>
   </hero>

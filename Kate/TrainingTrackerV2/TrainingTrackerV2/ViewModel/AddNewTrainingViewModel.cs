@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using TrainingTrackerV2.MagicService;
 using TrainingTrackerV2.Model.SportActivities;
+using TrainingTrackerV2.DataBase;
+using TrainingTrackerV2.Model.SportActivities.Implementations;
 
 namespace TrainingTrackerV2.ViewModel
 {
@@ -16,6 +18,7 @@ namespace TrainingTrackerV2.ViewModel
         #region NonPublic Fields
 
         IDataBridge _bridge;
+        IConnectionDb _connection;
 
         #endregion
 
@@ -63,17 +66,30 @@ namespace TrainingTrackerV2.ViewModel
         
         
 
-        public string TestProperty 
-        { 
-            get
-            {
-                return "Не смотря на то, что у Леры маленькие сиськи я все равно хочу ее выебать";
-            }
-        }
 
         #endregion
 
         #region Commands
+        private RelayCommand _butSimple;
+
+        public RelayCommand butSimple
+        {
+            get
+            {
+                if (_butSimple == null)
+                {
+                    _butSimple = new RelayCommand(butSimpleExecute);
+                }
+                return _butSimple;
+
+            }
+        }
+            public void butSimpleExecute()
+            {
+                _exercises.Add(new SimpleExerciseModel("New Simple Exercise", "Description"));
+                RaisePropertyChanged("Exercises");
+            }
+        
 
         private RelayCommand _butAddWeight;
         public RelayCommand ButAddWeight
@@ -114,6 +130,25 @@ namespace TrainingTrackerV2.ViewModel
                 Exercises.RemoveAt(Exercises.Count-1);
                 RaisePropertyChanged("Exercises");
             }
+        }
+
+        private RelayCommand _butCardio;
+
+        public RelayCommand ButCardio
+        {
+            get
+            {
+                if (_butCardio == null)
+                {
+                    _butCardio = new RelayCommand(butAddCardioExecute);
+                }
+                return _butCardio;
+            }
+        }
+        private void butAddCardioExecute()
+        {
+             _exercises.Add(new CardioExerciseModel("New Cardio Exercise", "Description"));
+            RaisePropertyChanged("Exercises");
         }
 
         #endregion

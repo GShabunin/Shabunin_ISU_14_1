@@ -1,0 +1,25 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:model="clr-namespace:TrainingTrackerV2.Model.SportActivities.Implementations">
+
+    <DataTemplate DataType="{x:Type model:SimpleExerciseModel}">
+
+        <Grid>
+            <StackPanel Orientation="Vertical" >
+                <Label Content="Имя упражнения" />
+                <TextBox Text="{Binding Name}" />
+
+                <Label Content="Комментарий" />
+                <TextBox Text="{Binding Description}" />
+
+                <!--Ну а дальше мы пишем еще пишем интерфейс для добавления новых подходов
+                и реализацию ажывоажфд ывоафдж ывоа ждфылвоа жфдлвыоа жд-->
+
+
+            </StackPanel>
+        </Grid>
+
+    </DataTemplate>
+
+
+</ResourceDictionary>

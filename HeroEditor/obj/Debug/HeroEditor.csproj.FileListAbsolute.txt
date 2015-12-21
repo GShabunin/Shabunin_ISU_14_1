@@ -86,3 +86,5 @@ C:\Users\Geralt\Documents\Visual Studio 2015\Projects\HeroEditor\HeroEditor\obj\
 \\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\HeroEditor.g.resources
 \\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\HeroEditor.Properties.Resources.resources
 \\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\obj\Debug\HeroEditor.csproj.GenerateResource.Cache
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\bin\Debug\HeroEditor.exe.CodeAnalysisLog.xml
+\\psf\Home\Documents\Shabunin_ISU_14_1\HeroEditor\bin\Debug\HeroEditor.exe.lastcodeanalysissucceeded
