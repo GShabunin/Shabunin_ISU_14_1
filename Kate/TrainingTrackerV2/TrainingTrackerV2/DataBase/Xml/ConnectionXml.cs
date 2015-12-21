@@ -277,5 +277,11 @@ namespace TrainingTrackerV2.DataBase.Xml
 
             throw new NotImplementedException("Я понятия не имею как это могло бы произойти");
         }
+
+
+        public IList<IExercise> Exercises
+        {
+            get { throw new NotImplementedException(); }
+        }
     }
 }
